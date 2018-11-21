@@ -5,7 +5,7 @@ End Code
 <div class="jumbotron">
     <img class="img-responsive" src="@Url.Content("~/Content/background.jpg")" />
     <h1>CBIR.NET</h1>
-    <p class="lead">hihi</p>
+    <p class="lead">hihihi</p>
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 
