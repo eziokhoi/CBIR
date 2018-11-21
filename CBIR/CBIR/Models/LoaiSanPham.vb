@@ -10,10 +10,10 @@
 Imports System
 Imports System.Collections.Generic
 
-Partial Public Class Expenditure
+Partial Public Class LoaiSanPham
     Public Property id As Integer
-    Public Property Type As Boolean
-    Public Property Amount As Nullable(Of Integer)
-    Public Property Note As String
+    Public Property TenLoai As String
+
+    Public Overridable Property BangSanPhams As ICollection(Of BangSanPham) = New HashSet(Of BangSanPham)
 
 End Class

@@ -11,17 +11,18 @@ Imports System
 Imports System.Data.Entity
 Imports System.Data.Entity.Infrastructure
 
-Partial Public Class mvcEntities
+Partial Public Class CS4PEEntities
     Inherits DbContext
 
     Public Sub New()
-        MyBase.New("name=mvcEntities")
+        MyBase.New("name=CS4PEEntities")
     End Sub
 
     Protected Overrides Sub OnModelCreating(modelBuilder As DbModelBuilder)
         Throw New UnintentionalCodeFirstException()
     End Sub
 
-    Public Overridable Property Expenditures() As DbSet(Of Expenditure)
+    Public Overridable Property BangSanPhams() As DbSet(Of BangSanPham)
+    Public Overridable Property LoaiSanPhams() As DbSet(Of LoaiSanPham)
 
 End Class
